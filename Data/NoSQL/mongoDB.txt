@@ -1,0 +1,9 @@
+Tipos
+- Key-Value
+- Documento
+- Coluna
+- Grafos
+- entre outros…
+
+
+Key-Value > Chave Valor
