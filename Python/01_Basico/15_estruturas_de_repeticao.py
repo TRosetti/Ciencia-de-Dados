@@ -25,14 +25,14 @@ O comando for é usado para percorrer um objeto interável. Faz sentido usar (fo
 
 '''
 
-# texto = input("Digite um texto: ")
-# VOGAIS = 'AEIOU'
-# n = 0
-# for letra in texto:
-#     if letra.upper() in VOGAIS:
-#         n += 1
-#         print(letra, end=" ")
-# print(n)
+texto = input("Digite um texto: ")
+VOGAIS = 'AEIOU'
+n = 0
+for letra in texto:
+    if letra.upper() in VOGAIS:
+        n += 1
+        print(letra, end=" ")
+print(n)
 
 
 ''' 

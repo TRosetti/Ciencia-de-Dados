@@ -28,12 +28,12 @@ print(type(preco))
 
 #   Conversão por Divisão
 
-preco = 10
-print(preco)               # 10     _> Int
+preco = 5
+print(preco)               # 5    _> Int
 
-print(preco / 2)           # 10.0   _> Float
+print(preco / 2)           # 2.5   _> Float
 
-print(preco // 2)          # 10.0   _> Int
+print(preco // 2)          # 2   _> Int
 
 
 #   Número para String
