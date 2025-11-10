@@ -1,6 +1,8 @@
-SELECT t1.IdTransacao,
-        t1.DtCriacao,
-        t3.DescNomeProduto 
+--  Qual mês tiemos mais lita de presença assinadas?
+
+SELECT 
+        substr(t1.DtCriacao, 1,7) AS Mes,
+        count(DISTINCT t1.IdTransacao) AS TotalListas
 FROM transacoes AS t1
 
 LEFT JOIN transacao_produto AS t2
@@ -11,4 +13,10 @@ LEFT JOIN produtos AS t3
 ON t2.IdProduto = t3.IdProduto
  
 WHERE DescNomeProduto  = 'Lista de presença'
- ;
+GROUP BY Mes ;
+
+
+-- Quais clientes assinaram a lista de presença no dia 2025/08/25?
+
+SELECT * 
+FROM transacoes AS t1;

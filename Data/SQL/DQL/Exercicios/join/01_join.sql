@@ -10,3 +10,5 @@ ON t1.IdProduto = t2.IdProduto
 
 GROUP BY t2.DescCategoriaProduto
 ;
+
+
