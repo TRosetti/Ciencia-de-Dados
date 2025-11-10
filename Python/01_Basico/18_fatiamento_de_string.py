@@ -1,4 +1,4 @@
- '''
+'''
     Fatiamento de Strings
 
 Fatiamento de strings é uma técnica utilizada para retornar substrings (partes da string original), 
