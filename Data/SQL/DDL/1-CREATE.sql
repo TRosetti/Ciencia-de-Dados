@@ -1,13 +1,27 @@
-CREATE TABLE ofertas 
-(disc_cod  numeric(5)  not null, 
- prof_matr  numeric(5)  not null, 
- oferta_sem   char(1)        not null, 
- oferta_ano  char(4)        not null);
+-- Criando Tabela a partir de funções 
+
+DROP TABLE IF EXISTS relatorio_diario; -- caso queria recriar a tabela para atualizar alguma coisa esse drop está aqui pra isso (apaga a tablea caso exista)
+
+CREATE TABLE IF NOT EXISTS relatorio_diario AS 
+
+with tb_diaria AS (
+    SELECT  substr(DtCriacao, 1, 10) AS DtDia,
+        COUNT(DISTINCT IdTransacao) AS QtDeTransacoe
+    FROM transacoes
+    GROUP BY DtDia
+    ORDER By DtDia
+),
+tb_acum AS (
+    SELECT 
+    *,
+    sum(QtDeTransacoe) OVER (ORDER BY DtDia) AS SumQtDeTransacoe
+    FROM tb_diaria
+    
+)
+
+SELECT *  
+FROM tb_acum ;
 
 
-CREATE VIEW v_professores 
-(matricula, nome) 
-as 
-(SELECT prof_matr, prof_nome  
-  FROM professores 
-  WHERE prof_ds_dou is null)
+
+SELECT * FROM relatorio_diario;

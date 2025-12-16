@@ -1,4 +1,4 @@
--- 1 Função para saber quanto cada pessoa transacionou por dia, depois pegar o acumulado 
+-- 1. Função para saber quanto cada pessoa transacionou por dia, depois pegar o acumulado 
 
 WITH tb_cliente_dias AS (
 

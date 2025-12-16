@@ -1,4 +1,4 @@
--- 2 Função para calcular média de frenquencia de todos os clientes do canal 
+-- 2. Função para calcular média de frenquencia de todos os clientes do canal 
 
 WITH cliente_dias AS (
 
