@@ -8,4 +8,4 @@ df_cambio = pd.DataFrame({
     index=sorted(list(pd.date_range('1/5/2014', periods=4)) * 2)
 )
 
-print(df_cambio)
+print(df_cambio) 
