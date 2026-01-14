@@ -20,7 +20,7 @@ for i in range(len(pontos)):
 
 resultado
 filtro
-# %%
+ # %%
 
 brinquedo = pd.DataFrame(
     {
@@ -30,35 +30,35 @@ brinquedo = pd.DataFrame(
      }
 )
 
-filtro = brinquedo["idade"] >= 18
-brinquedo[filtro]
+filtro = brinquedo["idade"] >= 18 # retorna uma serie contendo Boolenos 
+brinquedo[filtro] # Aqui ele mostra apenas o resultado que tem um bool = true    
 
 # %%
 
-df = pd.read_csv("../data/transacoes.csv")
+df = pd.read_csv("../data/transacoes.csv", sep=';')
 df.head()
 
 # %%
 
 # valores maiores que 50
-filtro = df["qtdePontos"] >= 50
+filtro = df["QtdePontos"] >= 50
 df[filtro]
 
 # %%
 # valores entre 50 (inclusive) e 100
-filtro = (df["qtdePontos"] >= 50) & (df["qtdePontos"] < 100)
+filtro = (df["QtdePontos"] >= 50) & (df["QtdePontos"] < 100)
 filtro
 df[filtro]
 
 # %%
 
-filtro = (df["qtdePontos"] == 1) | (df["qtdePontos"] == 100)
+filtro = (df["QtdePontos"] == 1) | (df["QtdePontos"] == 100)
 df[filtro]
 
 # %%
 # pontos entre 0 e 50 ou do ano de 2025 para frente
 
-filtro = (df["qtdePontos"] > 0) & (df["qtdePontos"]<=50) | (df["dtCriacao"]>='2025-01-01')
+filtro = (df["QtdePontos"] > 0) & (df["QtdePontos"]<=50) | (df["DtCriacao"]>='2025-01-01')
 df[filtro]
 
 # %%
