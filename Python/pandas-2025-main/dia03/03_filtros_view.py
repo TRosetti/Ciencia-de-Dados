@@ -23,3 +23,4 @@ print("B:", B)
 B.append("fodase")
 print("A:", A)
 print("B:", B)
+ 
