@@ -1,10 +1,21 @@
 # %%
 
 import pandas as pd
-
+import requests
 url = "https://pt.wikipedia.org/wiki/Unidades_federativas_do_Brasil"
 
-dfs = pd.read_html(url)
+# Definimos um User-Agent para o site achar que somos um navegador (Chrome/Safari)
+header = {
+  "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36"
+}
+
+# Fazemos a requisição primeiro
+r = requests.get(url, headers=header)
+
+# Passamos o texto da resposta para o pandas
+# O Pandas pode dar um aviso se passarmos a string direto, então usamos io.StringIO
+import io
+dfs = pd.read_html(io.StringIO(r.text))
 uf = dfs[1]
 uf
 # %%
@@ -22,6 +33,9 @@ uf["Área (km²)"] = uf["Área (km²)"].apply(str_to_float)
 uf["População (Censo 2022)"] = uf["População (Censo 2022)"].apply(str_to_float)
 uf["PIB (2015)"] = uf["PIB (2015)"].apply(str_to_float)
 uf["PIB per capita (R$) (2015)"] = uf["PIB per capita (R$) (2015)"].apply(str_to_float)
+
+# %%
+uf.dtypes
 
 # %%
 
@@ -83,8 +97,9 @@ def classifica_bom(linha):
 
 # %%
 
-uf.apply(classifica_bom, axis=1)
-
+uf.apply(classifica_bom, axis=1) # o axis=1 faz com que a função 'classifica_bom' seja aplicado a cada linha 
+    # axis=0 passa cada coluna 
+    # axis=1 passa todas as linhas  
 # %%
 
 uf.apply(lambda x: x["PIB per capita (R$) (2015)"], axis=1)

@@ -2,7 +2,7 @@
 
 import pandas as pd
 
-df = pd.read_csv("../data/clientes.csv")
+df = pd.read_csv("../data/clientes.csv", sep=';')
 df.head()
 
 # %%
@@ -27,7 +27,6 @@ df.head()
 
 # %%
 
-df["idCliente"].apply(get_last_id)
+df["idCliente"].apply(get_last_id) # usamos o apply para utilizar uma função que possa modificar ou caputurar algum item, ele retorna uma série
 
 
-# %%
