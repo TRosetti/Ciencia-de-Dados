@@ -12,7 +12,7 @@ idades.describe() # retorna alguns dados
 # %%
 clientes = pd.read_csv("../data/clientes.csv", sep=';')
 clientes
-
+ 
 # %%
 clientes["flTwitch"].sum()
 clientes["flTwitch"].mean()

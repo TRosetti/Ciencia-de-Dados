@@ -3,7 +3,7 @@
 import pandas as pd
 import numpy as np
 
-transacoes = pd.read_csv("../data/transacoes.csv")
+transacoes = pd.read_csv("../data/transacoes.csv", sep=";")
 transacoes.head()
 
 # %%
@@ -22,21 +22,21 @@ idades = pd.Series([21,32,43,32,14,65,78,34,19])
 
 # %%
 
-summary = (transacoes.groupby(by=["idCliente"], as_index=False)
+summary = (transacoes.groupby(by=["IdCliente"], as_index=False)
            .agg({
-               "idTransacao": ['count'],
-               "qtdePontos": ["sum", "mean", diff_amp],
-               "dtCriacao": [life_time]
+               "IdTransacao": ['count'],
+               "QtdePontos": ["sum", "mean", diff_amp],
+               "DtCriacao": [life_time]
            }) 
 )
 
 summary.columns = [
-    "idCliente",
-    "qtdeTransacao",
-    "totalPontos",
-    "mediaPontos",
-    "ampMeanDiff",
-    "lifeTime",
+    "IdCliente",
+    "QtdeTransacao",
+    "TotalPontos",
+    "MediaPontos",
+    "AmpMeanDiff",
+    "LifeTime",
 ]
 
 summary

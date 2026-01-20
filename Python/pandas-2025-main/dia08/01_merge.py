@@ -2,11 +2,11 @@
 
 import pandas as pd
 
-transacoes = pd.read_csv("../data/transacoes.csv")
+transacoes = pd.read_csv("../data/transacoes.csv", sep=';')
 transacoes.head()
 
 # %%
-clientes = pd.read_csv("../data/clientes.csv")
+clientes = pd.read_csv("../data/clientes.csv", sep=';')
 clientes.head()
 
 # %%
