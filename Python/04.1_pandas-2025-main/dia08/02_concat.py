@@ -19,7 +19,7 @@ df_03 = pd.DataFrame({
 
 # %%
 
-dfs = [df, df_02]
+dfs = [df, df_02] # pd.concat() -> espera uma lista de dataframes 
 
 pd.concat(dfs, ignore_index=True)
 
@@ -30,4 +30,5 @@ df_03
 
 # %%
 
-pd.concat([df, df_03], axis=1)
+pd.concat([df, df_03], axis=1) # axis -> muda a direção do concat, normalmente ele adiciona o segundo dataframe em baixo do primeiro, quando adicionamos o axis=1 ele adiciona ao lado do primeiro 
+# %%

@@ -8,4 +8,4 @@ WHERE t1.idCliente IN (
     FROM transacoes
     WHERE substr(DtCriacao, 1, 10) = '2025-08-25' -- primeiro dia
 )
-AND substr(t1.DtCriacao, 1, 10) = '2025-08-29'
+AND substr(t1.DtCriacao, 1, 10) = '2025-08-29'‰‰

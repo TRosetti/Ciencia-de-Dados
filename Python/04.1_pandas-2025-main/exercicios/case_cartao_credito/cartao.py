@@ -43,3 +43,5 @@ df_explode
                         values='vlParcela',
                         fill_value=0))
 
+
+# %%

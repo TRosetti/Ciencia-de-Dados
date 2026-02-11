@@ -11,11 +11,11 @@ def read_file(file_name:str):
     return df
 
 # %%
-file_names = os.listdir("../../data/ipea/")
+file_names = os.listdir("../../data/ipea/") # Retorna uma lista com todos os nomes dos aquivos nessa pasta
 
 dfs = []
 for i in file_names:
-    file_name = i.split(".")[0]
+    file_name = i.split(".")[0] # Divide a string usando o '.' como referencia, e pega a primeira divisão (nesse caso o nome dos arquivos sem o .csv)
     dfs.append(read_file(file_name))
 
 
@@ -23,4 +23,8 @@ df_full = (pd.concat(dfs, axis=1)
              .reset_index()
              .sort_values(["período", "nome"]))
 
-df_full.to_csv("homicios_consolidado.csv", index=False, sep=";")
+df_full.to_csv("homicidios_consolidado.csv", index=False, sep=";")
+# %%
+
+df_full
+# %%
