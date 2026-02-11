@@ -21,6 +21,15 @@ class Empresa:
     @ano_criacao.setter
     def ano_criacao(self, ano):
         self._ano_criacao = int(ano)
+    
+
+    @property
+    def nome(self):
+        return self._nome
+    
+    @nome.setter
+    def nome(self, nome):
+        self._nome = nome.title()
 
 
 
@@ -35,3 +44,5 @@ if __name__ == '__main__':
 
     print(type(weg.ano_criacao))
     print(f"Valor: {weg.ano_criacao}")
+
+    print(weg.nome)

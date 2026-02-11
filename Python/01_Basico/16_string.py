@@ -26,6 +26,6 @@ print(curso.rstrip())       # _> '     python'      , .rstrip() remove todos os 
 
 curso = 'Python'
 
-print(curso.center(10, '#'))    # _> "##Python##""
+print(curso.center(10, '#'))    # _> "##Python##"
 
 print('.'.join(curso))          # _> "P.y.t.h.o.n"
