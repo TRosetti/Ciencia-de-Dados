@@ -1,4 +1,4 @@
-from classe_0 import Empresa
+from python_oo_01 import Empresa
 
 Petro = Empresa(nome="Petrobras", ticker="PETR4", ano_criacao=1953, cnpj='33.000.167/0001-01')
 
