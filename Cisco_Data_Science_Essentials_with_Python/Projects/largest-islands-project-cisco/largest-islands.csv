@@ -1,0 +1,101 @@
+region,island,area,countries,climate,rank
+Africa,Madagascar,591896,Madagascar,tropics,4
+Antarctic,Kerguelen,6200,"Antarctic Lands, France",temperate,91
+Asia,Sumba,11153,Indonesia,tropics,65
+Asia,Hainan,34300,China,tropics,37
+Asia,Taiwan,36198,Taiwan,tropics,36
+Asia,Kyushu,36719,Japan,tropics,34
+Asia,Shikoku,18292,Japan,temperate,46
+Asia,Halmahera,17780,Indonesia,tropics,47
+Asia,Seram,17148,Indonesia,tropics,48
+Asia,Mindoro,9735,Philippines,tropics,71
+Asia,Sri Lanka,65268,Sri Lanka,tropics,25
+Asia,Leyte,7214,Philippines,tropics,85
+Asia,Sumbawa,15448,Indonesia,tropics,52
+Asia,Buru,9505,Indonesia,tropics,73
+Asia,Mindanao,94630,Philippines,tropics,19
+Asia,Flores,14250,Indonesia,tropics,54
+Asia,Hokkaido,83453,Japan,temperate,21
+Asia,Timor,30459,Timor Leste,tropics,41
+Asia,Samar,13080,Philippines,tropics,57
+Asia,Negros,12710,Philippines,tropics,58
+Asia,Bali,5416,Indonesia,tropics,98
+Asia,Java,129438,Indonesia,tropics,13
+Asia,Sulawesi,188522,Indonesia,tropics,11
+Asia,Borneo,755000,"Indonesia, Malaysia, Brunei",tropics,3
+Asia,Palawan,11785,Philippines,tropics,59
+Asia,Panay,11515,Philippines,tropics,61
+Asia,Luzon,104688,Philippines,tropics,17
+Asia,Honshu,227898,Japan,temperate,7
+Asia,Sumatra,480793,Indonesia,tropics,6
+Asia,Bangka,11330,Indonesia,tropics,62
+Eurasia,Yuzhny,33275,Russia,polar,39
+Eurasia,Kotelny,23165,Russia,polar,45
+Eurasia,October Revolution,14170,Russia,polar,55
+Eurasia,Komsomolets,9006,Russia,polar,77
+Eurasia,Novaya Sibir (New Siberian),6200,Russia,polar,91
+Eurasia,Sakhalin,76400,Russia,temperate,22
+Eurasia,Bolshevik,11270,Russia,polar,64
+Eurasia,Severny,47079,Russia,polar,29
+Europe,New Caledonia,16372,France,tropics,49
+Europe,Sardinia,24090,Italy,temperate,44
+Europe,Nordaustlandet,14443,Norway,polar,53
+Europe,Greenland,2166086,Denmark,polar,1
+Europe,Iceland,103000,Iceland,temperate,18
+Europe,Great Britain,209331,United Kingdom,temperate,9
+Europe,Sicily,25460,Italy,temperate,42
+Europe,Ireland,84421,"Ireland, United Kingdom",temperate,20
+Europe,Zealand,7031,Denmark,temperate,86
+Europe,Crete,8336,Greece,temperate,82
+Europe,Spitsbergen (Svalbard),39044,Norway,polar,33
+Europe,Corsica,8681,France,temperate,79
+Europe,Cyprus,9251,"Cyprus, United Kingdom",temperate,76
+Europe,Disko,8578,Greenland,polar,80
+North America,Anticosti,7892,Canada,temperate,83
+North America,Cape Breton,10311,Canada,temperate,70
+North America,Puerto Rico,8868,United States,tropics,78
+North America,Cornwallis (Nunavut),6995,Canada,polar,87
+North America,Hawai'I (Big Island),10438,United States,tropics,68
+North America,Prince of Wales (Alaska),6670,United States,temperate,88
+North America,Graham,6361,Canada,temperate,90
+North America,Kodiak (Alaska),9293,United States,temperate,75
+North America,Jamaica,10991,Caribbean,tropics,67
+North America,Prince Edward,5660,Canada,temperate,94
+North America,Coats (Nunavut),5498,Canada,temperate,97
+North America,Bylot (Nunavut),11067,Canada,polar,66
+North America,Prince Charles,9521,Canada,polar,72
+North America,Bathurst (Nunavut),16042,Canada,polar,50
+North America,Melville,42149,Canada,polar,31
+North America,"Tatlurutit (Devon Island, Nunavut)",55247,Canada,polar,27
+North America,Banks Island,70028,Canada,polar,24
+North America,Victoria Island,217291,Canada,polar,8
+North America,Axel Heiberg (Nunavut),43178,Canada,polar,30
+North America,Newfoundland,111390,Canada,temperate,15
+North America,Shugliaq (Southampton),41214,Canada,temperate,32
+North America,Hispaniola,76192,"Dominican Republic, Haiti",tropics,23
+North America,Prince of Wales (Nunavut),33339,Canada,polar,38
+North America,Baffin Island,507451,Canada,polar,5
+North America,Vancouver,31285,Canada,temperate,40
+North America,"Kuganajuup Qikiqtanga (Somerset, Nunavut)",24786,Canada,polar,43
+North America,Chichagof (Alaska),5306,United States,temperate,99
+North America,Prince Patrick,15848,Canada,polar,51
+North America,Cuba,109884,Cuba,tropics,16
+North America,King William (Nunavut),13111,Canada,polar,56
+North America,Ellef Ringnes (Nunavut),11295,Canada,polar,63
+North America,Ellesmere (Nunavut),196236,Canada,polar,10
+Oceania,Yos Sudarso,11742,Papua New Guinea,tropics,60
+Oceania,Vanua Levu,5556,Fiji,tropics,95
+Oceania,New Guinea,821400,"Papua New Guinea, Indonesia",tropics,2
+Oceania,Yelmalner/ Melville,5786,Australia,tropics,93
+Oceania,Te Waipounamu (South Island),152229,New Zealand,temperate,12
+Oceania,Tasmania,65022,Australia,temperate,26
+Oceania,Latangai,7404,Papua New Guinea,tropics,84
+Oceania,New Britain,36500,Papua New Guinea,tropics,35
+Oceania,Bougainville,9300,Papua New Guinea,tropics,74
+Oceania,Viti Levu,10429,Fiji,tropics,69
+Oceania,Te Ika-a-maui (North Island),116219,New Zealand,temperate,14
+Oceania,Guadalcanal,5302,Solomon Islands,tropics,100
+South America,East Falkland,6605,Argentina,temperate,89
+South America,Chiloe,8394,Chile,temperate,81
+South America,Isla Grande de Tierra del Fuego,47992,"Chile, Argentina",temperate,28
+South America,Wellington,5556,Chile,temperate,95
